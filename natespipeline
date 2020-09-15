@@ -1,7 +1,7 @@
 echo 'Hello, I made a change from Pipeline Demo' 
         stage 'Compile' 
         node { 
-          git url: 'https://github.com/nachofree/spring-petclinic.git'
+          git url: 'https://github.com/d00327120/spring-petclinic.git'
           sh "/usr/bin/mvn -B compile war:war" 
         } 
         stage 'Test' 
