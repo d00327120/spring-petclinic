@@ -27,6 +27,6 @@ echo 'Hello, I made a change from Pipeline Demo'
          node {
                 sh 'terraform init'
                 sh 'terraform plan -out=plan'
-                //sh 'terraform apply plan'
+                sh 'terraform apply plan'
           }
         }	 
